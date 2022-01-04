@@ -1,0 +1,11 @@
+# Novela settings
+baseurl = "https://ishitatsuyuki.github.io"
+theme = "github.com/forestryio/hugo-theme-novela"
+
+paginate = 6
+
+[social]
+github = "https://github.com/ishitatsuyuki"
+
+[taxonomies]
+author = "authors"
