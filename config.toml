@@ -1,6 +1,7 @@
 # Novela settings
 baseurl = "https://ishitatsuyuki.github.io"
 theme = "github.com/forestryio/hugo-theme-novela"
+title = "Tatsuyuki Ishi"
 
 paginate = 6
 

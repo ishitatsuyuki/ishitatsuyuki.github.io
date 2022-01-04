@@ -2,6 +2,8 @@
 title: "LatencyFleX: A new approach to game latency reduction"
 date: 2022-01-04T11:03:55+09:00
 hero: /images/latencyflex-hero.png
+authors:
+- Tatsuyuki Ishi
 ---
 
 A technology called Nvidia Reflex was released in 2020. It drastically improved system latency, by adjusting the pacing of the game's main thread so that it kept queued GPU work to a minimal amount. If you are not familiar with the tech, I recommend watching this [video](https://www.youtube.com/watch?v=7CKnJ5ujL_Q) from Battle(non)sense.
