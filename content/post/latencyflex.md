@@ -6,6 +6,8 @@ authors:
 - Tatsuyuki Ishi
 ---
 
+_This post describes the inner workings of [LatencyFleX](https://github.com/ishitatsuyuki/LatencyFleX), which is a set of libraries that achieves latency reduction for video games, made as a vendor-agnostic alternative to Nvidia Reflex._
+
 A technology called Nvidia Reflex was released in 2020. It drastically improved system latency, by adjusting the pacing of the game's main thread so that it kept queued GPU work to a minimal amount. If you are not familiar with the tech, I recommend watching this [video](https://www.youtube.com/watch?v=7CKnJ5ujL_Q) from Battle(non)sense.
 
 Some time later, I came across Google's wonderful congestion control algorithm, [BBR](https://queue.acm.org/detail.cfm?id=3022184). BBR was designed to solve a long-standing issue in networking: [Bufferbloat](https://bufferbloat.net). The cause of Bufferbloat was that previously, congestion control relied on packet loss, which was a signal that the buffer is full. As such, these algorithms could end up operating at the worst-case round-trip time. But it turns out that there's another signal for congestion, that can be utilized as soon as we reach full bandwidth, and it's called delay. BBR exploits this metric to avoid congestion at the optimal operation point.
