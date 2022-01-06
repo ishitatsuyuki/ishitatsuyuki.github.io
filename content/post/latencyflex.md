@@ -77,3 +77,5 @@ Nvidia Reflex, on the other hand, relies on explicit instrumentation of game eng
 In the end, I think Reflex's explicit instrumentation still has an advantage in terms of stability or frame smoothness, given its more detailed insight on internal queuing. However, LatencyFleX's trial-and-error measurement approach is also very promising, as it's highly generalized and future-proof, requires little instrumentation, and still delivers acceptable results.
 
 [LatencyFleX](https://github.com/ishitatsuyuki/LatencyFleX) is available for Linux users and can be injected into any game that supports Nvidia Reflex, and can also be used with certain games that does not support Reflex but meets certain game engine conditions. If you are interested, please give it a try. In the future, I look forward to developing integrations for game developers, once I'm confident the LFX is stable enough as an end product.
+
+For further reading, I recommend Raph Levien's [Swapchains and frame pacing](https://raphlinus.github.io/ui/graphics/gpu/2021/10/22/swapchain-frame-pacing.html), which covers a wider range of solutions and tradeoffs on solving the frame pacing issue.
